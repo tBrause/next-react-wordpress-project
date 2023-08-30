@@ -1,7 +1,11 @@
-import { BlogPostFullGql } from '@/types/blog-types';
+// Components
 import request, { gql } from 'graphql-request';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
+
+// Types
+import { BlogPostFullGql } from '@/types/blog-types';
 
 type Props = {
 	params: {
@@ -17,6 +21,7 @@ const WP_GRAPHQL_BASE = process.env.WP_GRAPHQL_BASE!;
 
 export default async function page({ params: { slug } }: Props) {
 	const post = await getPostData(slug);
+	const url = '/gql-blog';
 
 	return (
 		<div>
@@ -38,6 +43,7 @@ export default async function page({ params: { slug } }: Props) {
 				/>
 			)}
 			<div dangerouslySetInnerHTML={{ __html: post.content }} />
+			<Link href={url}>ddd</Link>
 		</div>
 	);
 }
