@@ -5,13 +5,13 @@ type BlogPostBaseGql = {
 	date: string;
 };
 
-// Teaser for overview page
+// Teaser for Overview-Blog-Page
 export type BlogPostTeaserGql = BlogPostBaseGql & {
 	excerpt: string;
 	slug: string;
 };
 
-// For full view
+// For Blog-Entrie-Full-View
 export type BlogPostFullGql = BlogPostBaseGql & {
 	content: string;
 	featuredImage?: {
