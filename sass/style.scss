@@ -1,28 +1,18 @@
-// Einzeiliger Kommentar. Siehe https://sass-lang.com/documentation/syntax/comments
-
 body {
 	margin: 0;
+	padding: 0;
+	font-family: var(--font-roboto);
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4rem;
 }
-/* Ein
-mehrzeiliger
-Kommentar
 
-*/
+h1 {
+	font-family: var(--font-lato);
+}
 
-/*! Lauter Kommentar mit "!" wird beim kompilieren nicht entfernt.
-(Wichtig z.B. bei style.css von WordPress-Themes oder bei Lizenz-Informationen.) */
-
-/* Importiere Teildateien ("Partials"). Unterstrich und Dateiendung dürfen weggelassen werden.
-Hinweis: @use ersetzt das lange übliche @import, siehe dazu https://sass-lang.com/documentation/at-rules/import
-*/
-// @use 'normalize';
-// @use 'globals/queries';
-// @use 'globals/colors';
-// @use 'globals/spacings';
-// @use 'layout';
-// @use 'navigation';
-// @use 'typographie';
-// @use 'components';
-// @use 'images';
-// @use 'pages';
-// @use 'tables';
+.info {
+	margin-top: 2rem;
+	padding: 0.5rem 1rem;
+	background-color: #f1f1f1;
+}

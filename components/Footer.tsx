@@ -1,16 +1,16 @@
-import { FiTwitter, FiFacebook } from 'react-icons/fi';
+// Desc: Footer component with legal navigation
+// Params: none
+// Return: Footer
+
+// Components
+import WpLegalNavigation from './WpLegalNavigation';
 export default function Footer() {
+	// Return
 	return (
 		<footer className="site-footer">
 			<small>&copy; Cimdata {new Date().getFullYear()}</small>
-			<nav className="social-nav" aria-label="Social Media">
-				<a href="https://twitter.com" aria-label="Twitter">
-					<FiTwitter />
-				</a>
-				<a href="https://facebook.com" aria-label="Facebook">
-					<FiFacebook />
-				</a>
-			</nav>
+			{/* LegalNavigation */}
+			<WpLegalNavigation />
 		</footer>
 	);
 }

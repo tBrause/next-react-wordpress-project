@@ -51,6 +51,10 @@ const linkTargets: LinkTarget[] = [
 		text: 'Gql-Blog',
 		url: '/gql-blog',
 	},
+	{
+		text: 'Gql-Page',
+		url: '/gql-page',
+	},
 ];
 
 function getMenuItems(pathName: string) {

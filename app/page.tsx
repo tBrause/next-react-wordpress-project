@@ -23,7 +23,7 @@ export default async function menu({ params: { slug } }: Props) {
 	const url = '/gql-blog';
 	console.log(slug);
 
-	return <div>lala</div>;
+	return <h1>Headline with Font Lato</h1>;
 }
 
 //
