@@ -1,0 +1,28 @@
+// Wordpress Navigation
+
+.main-navigation,
+.extern-navigation,
+.legal-navigation {
+	display: block;
+	& > ul {
+		list-style: none;
+		display: flex;
+		border: 1px solid #000;
+	}
+	&__list > li {
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		padding: 1rem 1rem;
+		& > a {
+			color: #000;
+			text-decoration: none;
+			padding: 0.5rem 1rem;
+			display: block;
+			&:hover {
+				background-color: #000;
+				color: #fff;
+			}
+		}
+	}
+}

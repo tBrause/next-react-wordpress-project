@@ -1,6 +1,12 @@
-body {
+@use 'pages/wp-content';
+@use 'pages/wp-nav';
+
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+body {
 	font-family: var(--font-roboto);
 	font-size: 1rem;
 	font-weight: 400;
@@ -16,3 +22,5 @@ h1 {
 	padding: 0.5rem 1rem;
 	background-color: #f1f1f1;
 }
+
+//
