@@ -10,8 +10,13 @@
 
     mkdir Name; cd Name
 
-> CMD: git clone & git remote remove orgin & npm install & npm run build & npm run dev
+> .env.local anlegen und Variablen vergeben
 
-    git clone https://github.com/tBrause/next-react-wordpress-project .; git remote remove origin; npm install; npm run build; npm run dev
+    WP_REST_BASE=.../wp-json/wp/v2
+    WP_GRAPHQL_BASE=.../graphql
+
+> CMD: git clone & git remote remove orgin & npm install & npm run dev
+
+    git clone https://github.com/tBrause/next-react-wordpress-project .; git remote remove origin; npm install; npm run dev
 
 > _Erfolgreich getestet:_
