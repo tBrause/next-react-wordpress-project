@@ -16,6 +16,8 @@ type uriToString = {
 
 // ENV
 const WP_GRAPHQL_BASE = process.env.WP_GRAPHQL_BASE!;
+const NAV_MAIN = process.env.NAV_MAIN!;
+console.log(typeof NAV_MAIN);
 
 // Export
 export default async function MainNavigation() {

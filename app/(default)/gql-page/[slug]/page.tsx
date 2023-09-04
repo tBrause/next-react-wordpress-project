@@ -27,7 +27,7 @@ type PageData = {
 	date: string;
 	modified: string;
 	content: string;
-}[];
+};
 
 // Meta
 export const metadata: Metadata = {
