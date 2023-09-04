@@ -2,7 +2,7 @@
 
 ## NPM-Packages
 
-### graphql, next, react, typescrpit, sass, eslint, postcss, cssnano
+### `graphql` `next` `react` `typescript` `sass` `eslint` `postcss` `cssnano`
 
 ## Installation
 
