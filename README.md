@@ -2,7 +2,7 @@
 
 ## NPM-Packages
 
-### graphql, next, react, sass, eslint, postcss, cssnano, cjs, vsc, git, redaxios
+### graphql, next, react, typescrpit, sass, eslint, postcss, cssnano
 
 ## Installation
 
@@ -20,3 +20,7 @@
     git clone https://github.com/tBrause/next-react-wordpress-project .; git remote remove origin; npm install; npm run dev
 
 > _Erfolgreich getestet:_
+
+## Clone from
+
+> [Next-React-Typescript Entwicklungsumgebung](https://github.com/tBrause/npm-next-react-typescript)
