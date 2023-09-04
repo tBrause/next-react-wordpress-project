@@ -12,6 +12,6 @@
 
 > CMD: git clone & git remote remove orgin & npm install & npm run build & npm run dev
 
-    git clone https://github.com/tBrause/api-owm-project .; git remote remove origin; npm install; npm run build; npm run dev
+    git clone https://github.com/tBrause/next-react-wordpress-project .; git remote remove origin; npm install; npm run build; npm run dev
 
 > _Erfolgreich getestet:_
