@@ -12,6 +12,23 @@ type Props = {
 	};
 };
 
+// Types
+type PageDataContent = {
+	title: string;
+	slug: string;
+	date: string;
+	modified: string;
+	content: string;
+}[];
+
+type PageData = {
+	title: string;
+	slug: string;
+	date: string;
+	modified: string;
+	content: string;
+}[];
+
 // Meta
 export const metadata: Metadata = {
 	title: 'Seite',
@@ -23,19 +40,16 @@ const WP_GRAPHQL_BASE = process.env.WP_GRAPHQL_BASE!;
 
 // Export
 export default async function GqlPagePage({ params: { slug } }: Props) {
-	// Query for GraphQl
+	console.log(slug);
+
+	// Query for GraphQl for Single Page
 	const query = gql`
 		{
-			page(id: "84", idType: DATABASE_ID) {
+			page(idType: URI, id: "${slug}") {
 				title
 				slug
-				databaseId
 				date
-				id
-				title
-				guid
 				modified
-				parentId
 				content
 			}
 		}
@@ -49,30 +63,29 @@ export default async function GqlPagePage({ params: { slug } }: Props) {
 	};
 
 	// Data
-	type PageDataContent = {
-		title: string;
-		date: string;
-		id: string;
-		databaseId: number;
-		content: string;
-	}[];
-
-	type PageData = {
-		page: [];
-	}[];
-
-	const page: [] = response.page;
+	const { page } = response;
+	// console.log(page);
 
 	const { title, date, id, databaseId, content } = page;
-
-	console.log(databaseId);
+	console.log(title);
 
 	return (
 		<>
 			<h1>{title}</h1>
-			<em>{date}</em>
-			<p>{content}</p>
-			{/* <PageMain key={data.id} {...data} /> */}
+			{/* <em>{date}</em>*/}
+			<div dangerouslySetInnerHTML={{ __html: content }} />
+			{/* {getContent(content)} */}
 		</>
 	);
+}
+
+// Get Items for li
+function getContent(page: []): string {
+	// Zeige mir die Daten
+	// console.log(data);
+
+	// hole den content
+	const content: string = page;
+	console.log(content);
+	return content;
 }
