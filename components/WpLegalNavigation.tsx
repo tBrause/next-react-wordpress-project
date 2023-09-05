@@ -60,7 +60,7 @@ function getItems(data: []) {
 		// Return li
 		return (
 			<li key={uri}>
-				<Link href={uri}>{label}</Link>
+				<Link href={`/gql-page${uri}`}>{label}</Link>
 			</li>
 		);
 	});
