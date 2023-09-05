@@ -1,4 +1,4 @@
-import { BlogPostRest, BlogPostTeaserGql } from '@/types/blog-types';
+import { BlogPostTeaserGql } from '@/types/blog-types';
 import { gql, request } from 'graphql-request';
 import { Metadata } from 'next';
 import Link from 'next/link';

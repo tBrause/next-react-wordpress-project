@@ -3,7 +3,6 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import WpExternNavigation from '@/components/WpExternNavigation';
 import WpMainNavigation from '@/components/WpMainNavigation';
-import WpSubNavigation from '@/components/WpSubNavigation';
 
 // SCSS
 import '@/sass/style.scss';
@@ -51,10 +50,6 @@ export default function RootLayout({
 				{/* WpMainNavigation */}
 				<div className="info">Main Navigation</div>
 				<WpMainNavigation />
-
-				{/* WpSubNavigation */}
-				<div className="info">Sub Navigation</div>
-				<WpSubNavigation />
 
 				{/* Content */}
 				<div className="info">Content</div>
