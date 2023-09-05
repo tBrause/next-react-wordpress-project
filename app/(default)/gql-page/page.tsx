@@ -8,8 +8,8 @@ import { PagePostTeaserGql } from '@/types/page-types';
 
 // Meta
 export const metadata: Metadata = {
-	title: 'Page',
-	description: 'Die neuesten Meldungen',
+	title: 'Startseite',
+	description: 'Wilkommen auf der Startseite',
 };
 
 // ENV
@@ -41,17 +41,7 @@ export default async function GqlPagePage() {
 
 	return (
 		<>
-			<h1>Page</h1>
-			{/* Für jeden Eintrag in nodes eine BlogTeaser-Komponente
-			{response.pages.nodes.map((post) => (
-				// <PageMain key={post.slug} {...post} />
-				console.log();
-				
-			))} */}
-
-			{/* {response.page.nodes.map((page) => (
-				<PageMain key={page.id} {title} />
-			))} */}
+			<h1>Startseite</h1>
 		</>
 	);
 }
