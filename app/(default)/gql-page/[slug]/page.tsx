@@ -53,8 +53,8 @@ export default async function GqlPagePage({ params: { slug } }: Props) {
 	};
 
 	// Data
-	const page: PageDataContent = response.page.nodes[0];
-	console.log(page);
+	const page: PageDataContent = response.page;
+	// console.log(page);
 
 	const content: string = page.content;
 	const title: string = page.title;
