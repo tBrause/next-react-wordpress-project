@@ -21,7 +21,7 @@ const WP_GRAPHQL_BASE = process.env.WP_GRAPHQL_BASE!;
 
 export default async function page({ params: { slug } }: Props) {
 	const post = await getPostData(slug);
-	console.log(slug);
+	// console.log(slug);
 
 	const url = '/gql-blog';
 
@@ -45,7 +45,7 @@ export default async function page({ params: { slug } }: Props) {
 				/>
 			)}
 			<div dangerouslySetInnerHTML={{ __html: post.content }} />
-			<Link href={url}>ddd</Link>
+			<Link href={url}>zurück</Link>
 		</div>
 	);
 }
